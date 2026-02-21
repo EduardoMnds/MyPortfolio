@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eduardo Germano | Backend Java • Sistemas • Cloud</title>
+  <meta name="description" content="Portfólio de Eduardo Germano — Desenvolvedor Backend Java com experiência em Java, Spring Boot, SQL, APIs e arquitetura. Projetos, certificações e contatos." />
+  <meta name="theme-color" content="#0b1220" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Eduardo Germano | Portfólio" />
+  <meta property="og:description" content="Backend Java • Spring Boot • APIs • SQL • Cloud — projetos, certificações e experiência." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Background ornaments -->
+  <div class="bg-orb bg-orb--a" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--b" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Ir para o topo">
+        <span class="brand__mark" aria-hidden="true">EG</span>
+        <span class="brand__text">
+          <span class="brand__name">Eduardo Germano</span>
+          <span class="brand__role">Backend Java • Sistemas</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a class="nav__link" href="#sobre">Sobre</a>
+        <a class="nav__link" href="#habilidades">Habilidades</a>
+        <a class="nav__link" href="#experiencia">Experiência</a>
+        <a class="nav__link" href="#certificados">Certificados</a>
+        <a class="nav__link" href="#projetos">Projetos</a>
+        <a class="nav__link nav__cta" href="#contato">Contato</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" id="themeBtn" type="button" aria-label="Alternar tema">
+          <span class="icon" data-icon="moon" aria-hidden="true"></span>
+        </button>
+
+        <button class="icon-btn header__burger" id="burgerBtn" type="button" aria-label="Abrir menu">
+          <span class="icon" data-icon="menu" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="drawer" aria-hidden="true">
+      <div class="mobile-drawer__panel">
+        <div class="mobile-drawer__top">
+          <span class="mobile-drawer__title">Menu</span>
+          <button class="icon-btn" id="closeDrawerBtn" type="button" aria-label="Fechar menu">
+            <span class="icon" data-icon="x" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="mobile-drawer__links">
+          <a class="mobile-link" href="#sobre">Sobre</a>
+          <a class="mobile-link" href="#habilidades">Habilidades</a>
+          <a class="mobile-link" href="#experiencia">Experiência</a>
+          <a class="mobile-link" href="#certificados">Certificados</a>
+          <a class="mobile-link" href="#projetos">Projetos</a>
+          <a class="mobile-link" href="#contato">Contato</a>
+        </div>
+        <div class="mobile-drawer__footer">
+          <a class="btn btn--primary btn--full" href="#contato">Falar comigo</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero section">
+      <div class="container hero__grid">
+        <div class="hero__copy reveal">
+          <p class="badge">
+            <span class="badge__dot" aria-hidden="true"></span>
+            Disponível para oportunidades • Backend Java / Sistemas
+          </p>
+
+          
+          <h1 class="hero__title">
+            Projeto e desenvolvo <span class="grad">APIs e serviços backend escaláveis,</span> aplicando boas práticas de
+            <span class="grad">engenharia de software</span>, <span class="grad">arquitetura limpa</span> e foco em performance.
+          </h1>
+
+          <p class="hero__subtitle">
+            Experiência com <strong>Java</strong>, <strong>Spring / Spring Boot</strong>, <strong>SQL</strong>,
+            integração de APIs, <strong>Git</strong>, ferramentas corporativas e rotinas de deploy.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projetos">
+              <span class="icon" data-icon="rocket" aria-hidden="true"></span>
+              Ver projetos
+            </a>
+            <a class="btn btn--ghost" href="#contato">
+              <span class="icon" data-icon="mail" aria-hidden="true"></span>
+              Entrar em contato
+            </a>
+          </div>
+
+          <div class="hero__stats" role="list">
+            <div class="stat card reveal" role="listitem">
+              <div class="stat__value" data-count="3">0</div>
+              <div class="stat__label">anos em TI (estágio + efetivo)</div>
+            </div>
+            <div class="stat card reveal" role="listitem">
+              <div class="stat__value" data-count="10">0</div>
+              <div class="stat__label">+ ferramentas/tecnologias no dia a dia</div>
+            </div>
+            <div class="stat card reveal" role="listitem">
+              <div class="stat__value" data-count="9">0</div>
+              <div class="stat__label">certificações & cursos relevantes</div>
+            </div>
+          </div>
+
+          <div class="hero__chips reveal" aria-label="Principais stacks">
+            <span class="chip">Java • Spring Boot</span>
+            <span class="chip">REST • JWT • Swagger</span>
+            <span class="chip">Oracle • DB2 • PostgreSQL</span>
+            <span class="chip">CI/CD • GitHub</span>
+            <span class="chip">Scrum • Kanban</span>
+          </div>
+        </div>
+
+        <aside class="hero__visual reveal" aria-label="Destaques visuais">
+          <div class="visual-card">
+            <div class="visual-card__top">
+              <span class="visual-card__pill">Arquitetura & Padrões</span>
+              <span class="visual-card__pill visual-card__pill--ghost">Clean • SOLID • MVC</span>
+            </div>
+            <div class="visual-card__img" role="img" aria-label="Imagem placeholder de tecnologia"></div>
+            <div class="visual-card__bottom">
+              <div class="mini">
+                <div class="mini__k">Foco</div>
+                <div class="mini__v">APIs, microsserviços e integração</div>
+              </div>
+              <div class="mini">
+                <div class="mini__k">Qualidade</div>
+                <div class="mini__v">Testes, observabilidade e boas práticas</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="logos card">
+            <div class="logos__title">Stacks que eu uso</div>
+            <div class="logos__grid" aria-label="Lista de tecnologias">
+              <span class="logo-pill">Spring Boot</span>
+              <span class="logo-pill">JPA/Hibernate</span>
+              <span class="logo-pill">JWT</span>
+              <span class="logo-pill">Kafka</span>
+              <span class="logo-pill">Postman</span>
+              <span class="logo-pill">Jira</span>
+              <span class="logo-pill">Git/GitHub</span>
+              <span class="logo-pill">Linux</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span class="scroll-dot"></span>
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title reveal">Sobre</h2>
+          <p class="section__subtitle reveal">
+            Meu objetivo é atuar como <strong>Desenvolvedor Backend Java</strong>, <strong>Analista de Sistemas</strong> ou <strong>Trainee</strong>,
+            contribuindo com soluções eficientes, escaláveis e alinhadas às boas práticas.
+          </p>
+        </div>
+
+        <div class="about">
+          <div class="about__card card reveal">
+            <h3 class="card__title">Resumo profissional</h3>
+            <p class="card__text">
+              Sou um Profissional proativo e focado em resultados, com experiência progressiva em TI.
+              Atuei com suporte e desenvolvimento de sistemas, usando Java, SQL, Spring Boot, integração de APIs e
+              ferramentas como Jira, Confluence e Postman. Conhecimento em metodologias ágeis e versionamento com Git/GitHub.
+            </p>
+
+            <div class="about__highlights">
+              <div class="highlight">
+                <span class="icon" data-icon="shield" aria-hidden="true"></span>
+                <div>
+                  <div class="highlight__t">Boas práticas</div>
+                  <div class="highlight__d">SOLID, Clean Architecture, DTOs, documentação com Swagger.</div>
+                </div>
+              </div>
+              <div class="highlight">
+                <span class="icon" data-icon="plug" aria-hidden="true"></span>
+                <div>
+                  <div class="highlight__t">Integrações</div>
+                  <div class="highlight__d">APIs REST, JSON/XML, HTTP/HTTPS, autenticação JWT.</div>
+                </div>
+              </div>
+              <div class="highlight">
+                <span class="icon" data-icon="terminal" aria-hidden="true"></span>
+                <div>
+                  <div class="highlight__t">Deploy & suporte</div>
+                  <div class="highlight__d">Atualizações em servidores (Linux/Windows) e pipelines CI/CD.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__actions">
+              <a class="btn btn--ghost" href="https://wa.me/+5511950355939?text=" target="_blank">
+                <span class="icon" data-icon="calendar" aria-hidden="true"></span>
+                Agendar conversa
+              </a>
+              <a class="btn btn--primary" href="#" id="downloadCvBtn" target="_blank">
+                <span class="icon" data-icon="download" aria-hidden="true"></span>
+                Baixar CV
+              </a>
+            </div>
+          </div>
+
+          <div class="about__media reveal">
+            <div class="media-card card">
+              <div class="media-card__img media-card__img--portrait" role="img" aria-label="Foto placeholder para você trocar"></div>
+              <div class="media-card__content"></div>
+            </div>
+
+            <div class="media-card card">
+              <div class="media-card__img media-card__img--workspace" role="img" aria-label="Imagem placeholder de ambiente de trabalho"></div>
+              <div class="media-card__content">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="habilidades">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title reveal">Habilidades</h2>
+        </div>
+
+        <div class="skills">
+          <div class="skill card reveal">
+            <h3 class="card__title">Backend Java</h3>
+            <ul class="bullets">
+              <li>Java (OOP, Streams, Lambdas)</li>
+              <li>Spring Boot, Spring MVC, Spring Security</li>
+              <li>JPA/Hibernate, DTOs, validações</li>
+              <li>JWT (JJWT/Auth0), Swagger/OpenAPI</li>
+              <li>Testes: JUnit e Mockito</li>
+            </ul>
+          </div>
+
+          <div class="skill card reveal">
+            <h3 class="card__title">Bancos & Dados</h3>
+            <ul class="bullets">
+              <li>Oracle, DB2, PostgreSQL, MySQL</li>
+              <li>MongoDB, H2</li>
+              <li>SQL para monitoramento/diagnóstico</li>
+              <li>Modelagem e boas práticas</li>
+            </ul>
+          </div>
+
+          <div class="skill card reveal">
+            <h3 class="card__title">Arquitetura & Integração</h3>
+            <ul class="bullets">
+              <li>Microsserviços, RESTful APIs, MVC</li>
+              <li>SOLID, Clean Architecture</li>
+              <li>JSON, XML, HTTP/HTTPS</li>
+              <li>CI/CD (conceitos e prática)</li>
+              <li>Kafka (conceitos/curso)</li>
+            </ul>
+          </div>
+
+          <div class="skill card reveal">
+            <h3 class="card__title">Front & Extras</h3>
+            <ul class="bullets">
+              <li>HTML5, CSS3, JavaScript (ES6+)</li>
+              <li>Bootstrap, jQuery</li>
+              <li>PHP (básico)</li>
+              <li>Inglês avançado</li>
+            </ul>
+          </div>
+
+          <div class="skill card reveal">
+            <h3 class="card__title">Ferramentas</h3>
+            <ul class="bullets">
+              <li>Git/GitHub, TortoiseSVN</li>
+              <li>Postman, Jira, Confluence</li>
+              <li>Linux/Windows, deploys e updates</li>
+              <li>SAP (contexto corporativo)</li>
+            </ul>
+          </div>
+
+          <div class="skill card reveal">
+            <h3 class="card__title">Métodos</h3>
+            <ul class="bullets">
+              <li>Scrum, Kanban</li>
+              <li>Levantamento de requisitos e melhorias</li>
+              <li>Suporte N1/N2 (WMS/TMS)</li>
+              <li>Comunicação e trabalho em time</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experiencia">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title reveal">Experiência</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline__item card reveal">
+            <div class="timeline__meta">
+              <div class="timeline__role">Analista de TI Jr</div>
+              <div class="timeline__place">Samsung SDS</div>
+              <div class="timeline__time">04/2025 — 02/2026</div>
+            </div>
+            <ul class="bullets bullets--compact">
+              <li>Suporte N1/N2 dos sistemas WMS e TMS</li>
+              <li>Consultas SQL para monitoramento e diagnóstico</li>
+              <li>Levantamento de requisitos e melhorias</li>
+              <li>Deploys/atualizações de servidores e serviços (Linux/Windows/Talend)</li>
+              <li>Desenvolvimento em Java e integração de APIs</li>
+            </ul>
+          </article>
+
+          <article class="timeline__item card reveal">
+            <div class="timeline__meta">
+              <div class="timeline__role">Assistente de TI</div>
+              <div class="timeline__place">Samsung SDS</div>
+              <div class="timeline__time">10/2024 — 03/2025</div>
+            </div>
+            <ul class="bullets bullets--compact">
+              <li>Atuação em suporte e rotinas operacionais</li>
+              <li>Documentação e acompanhamento de chamados (Jira/Confluence)</li>
+              <li>Apoio em deploys e melhorias</li>
+            </ul>
+          </article>
+
+          <article class="timeline__item card reveal">
+            <div class="timeline__meta">
+              <div class="timeline__role">Estágio em TI</div>
+              <div class="timeline__place">Samsung SDS</div>
+              <div class="timeline__time">10/2022 — 10/2024</div>
+            </div>
+            <ul class="bullets bullets--compact">
+              <li>Base técnica em suporte e processos</li>
+              <li>Consultas SQL e acompanhamento de integrações</li>
+              <li>Rotinas de deploy e atualizações</li>
+            </ul>
+          </article>
+
+          <article class="timeline__item card reveal">
+            <div class="timeline__meta">
+              <div class="timeline__role">Estagiário de TI</div>
+              <div class="timeline__place">Centro Universitário ENIAC</div>
+              <div class="timeline__time">03/2022 — 05/2022</div>
+            </div>
+            <ul class="bullets bullets--compact">
+              <li>Manutenção de hardware</li>
+              <li>Desenvolvimento web (suporte a páginas e rotinas)</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="edu cert-grid">
+          <div class="card reveal">
+            <h3 class="card__title">Formação</h3>
+            <ul class="bullets">
+              <li><strong>Engenharia da Computação</strong> — Centro Universitário ENIAC (02/2020 – 12/2024)</li>
+              <li><strong>PosTech Arquitetura e Desenvolvimento em Java</strong> — FIAP (cursando)</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3 class="card__title">Cursos & Certificações</h3>
+            <ul class="bullets">
+              <li>Java Fundamentos (FIAP – 60h)</li>
+              <li>Java POO (40h)</li>
+              <li>AWS para Iniciantes (Udemy – 7h)</li>
+              <li>Java com Spring Boot, Kafka e Microserviços (Udemy – 6.5h)</li>
+              <li>UML – Guia Básico (Udemy – 5h)</li>
+              <li>Inglês — Avançado</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates (placeholders) -->
+    <section class="section" id="certificados">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title reveal">Certificados</h2>
+        </div>
+
+        <div class="gallery">
+          <button class="gallery__item card reveal" type="button" data-modal="cert1" aria-label="Abrir certificado 1">
+            <div class="gallery__img gallery__img--cert" role="img" aria-label="Placeholder certificado"></div>
+            <div class="gallery__cap">
+              <div class="gallery__d">JAVA POO</div>
+            </div>
+          </button>
+
+          <button class="gallery__item card reveal" type="button" data-modal="cert2" aria-label="Abrir certificado 2">
+            <div class="gallery__img gallery__img--cert2" role="img" aria-label="Placeholder certificado"></div>
+            <div class="gallery__cap">
+              <div class="gallery__d">Ambiente de Desenvolvimento Java</div>
+            </div>
+          </button>
+
+          <button class="gallery__item card reveal" type="button" data-modal="cert3" aria-label="Abrir certificado 3">
+            <div class="gallery__img gallery__img--cert3" role="img" aria-label="Placeholder certificado"></div>
+            <div class="gallery__cap">
+              <div class="gallery__d">UML - Guia Básico para Análise e Projeto de Sistemas</div>
+            </div>
+          </button>
+
+          <button class="gallery__item card reveal" type="button" data-modal="cert4" aria-label="Abrir certificado 4">
+            <div class="gallery__img gallery__img--cert4" role="img" aria-label="Placeholder certificado"></div>
+            <div class="gallery__cap">
+              <div class="gallery__d">UML - Guia Básico para Análise e Projeto de Sistemas</div>
+            </div>
+          </button>
+
+          <button class="gallery__item card reveal" type="button" data-modal="cert5" aria-label="Abrir certificado 5">
+            <div class="gallery__img gallery__img--cert5" role="img" aria-label="Placeholder certificado"></div>
+            <div class="gallery__cap">
+              <div class="gallery__d">Introdução á Plataforma Java</div>
+            </div>
+          </button>
+
+          <button class="gallery__item card reveal" type="button" data-modal="cert7" aria-label="Abrir certificado 7">
+            <div class="gallery__img gallery__img--cert7" role="img" aria-label="Placeholder certificado"></div>
+            <div class="gallery__cap">
+              <div class="gallery__d">Java com Spring Boot , Kafka e Microserviços</div>
+            </div>
+          </button>
+
+          <button class="gallery__item card reveal" type="button" data-modal="cert8" aria-label="Abrir certificado 8">
+            <div class="gallery__img gallery__img--cert8" role="img" aria-label="Placeholder certificado"></div>
+            <div class="gallery__cap">
+              <div class="gallery__d">JAVA Fundamentos (FIAP)</div>
+            </div>
+          </button>
+
+          <button class="gallery__item card reveal" type="button" data-modal="cert9" aria-label="Abrir certificado 9">
+            <div class="gallery__img gallery__img--cert9" role="img" aria-label="Placeholder certificado"></div>
+            <div class="gallery__cap">
+              <div class="gallery__d">Linux Fundamentos (FIAP)</div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title reveal">Projetos</h2>
+        </div>
+
+        <div class="projects">
+          <article class="project card reveal">
+            <div class="project__img project__img--a" role="img" aria-label="Imagem placeholder do projeto"></div>
+            <div class="project__body">
+              <h3 class="project__title">Desenvolvimento Backend</h3>
+              <p class="project__desc">
+                API para consultas (GET) e Inserts (POST) de menus para um Restaurante
+              </p>
+              <div class="project__tags">
+                <span class="chip chip--sm">Java</span>
+                <span class="chip chip--sm">Spring/SpringBoot</span>
+                <span class="chip chip--sm">JPA</span>
+                <span class="chip chip--sm">MySQL</span>
+                <span class="chip chip--sm">Maven</span>
+              </div>
+              <div class="project__links">
+                <a class="btn btn--ghost btn--sm" href="https://github.com/EduardoMnds/api-restaurante" target="_blank" rel="noreferrer"><span class="icon" data-icon="github" aria-hidden="true"></span>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project card reveal">
+            <div class="project__img project__img--b" role="img" aria-label="Imagem placeholder do projeto"></div>
+            <div class="project__body">
+              <h3 class="project__title">Desenvolvimento Backend</h3>
+              <p class="project__desc">
+                Microsserviço que realiza envio de e-mail
+              </p>
+              <div class="project__tags">
+                <span class="chip chip--sm">Java</span>
+                <span class="chip chip--sm">Spring/SpringBoot</span>
+                <span class="chip chip--sm">JPA</span>
+                <span class="chip chip--sm">PostgreSQL</span>
+                <span class="chip chip--sm">RabbitMQ</span>
+                <span class="chip chip--sm">Maven</span>
+              </div>
+              <div class="project__links">
+                <a class="btn btn--ghost btn--sm" href="https://github.com/EduardoMnds/micro-service-project" target="_blank" rel="noreferrer"><span class="icon" data-icon="github" aria-hidden="true"></span>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project card reveal">
+            <div class="project__img project__img--c" role="img" aria-label="Imagem placeholder do projeto"></div>
+            <div class="project__body">
+              <h3 class="project__title">Desenvolvimento Web</h3>
+              <p class="project__desc">
+                Desenvolvimento do meu primeiro Portfólio Web
+              </p>
+              <div class="project__tags">
+                <span class="chip chip--sm">HTML</span>
+                <span class="chip chip--sm">CSS</span>
+                <span class="chip chip--sm">JavaScript</span>
+              </div>
+              <div class="project__links">
+                <a class="btn btn--ghost btn--sm" href="https://github.com/EduardoMnds/My-Portfolio" target="_blank" rel="noreferrer"><span class="icon" data-icon="github" aria-hidden="true"></span>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project card reveal">
+            <div class="project__img project__img--d" role="img" aria-label="Imagem placeholder do projeto"></div>
+            <div class="project__body">
+              <h3 class="project__title">Desenvolvimento Backend</h3>
+              <p class="project__desc">
+                Desenvolvimento de um CRUD completo de uma concessionária de carros
+              </p>
+              <div class="project__tags">
+                <span class="chip chip--sm">Java</span>
+                <span class="chip chip--sm">Spring/SpringBoot</span>
+                <span class="chip chip--sm">JPA</span>
+                <span class="chip chip--sm">PostgreSQL</span>
+              </div>
+              <div class="project__links">
+                <a class="btn btn--ghost btn--sm" href="https://github.com/EduardoMnds/CarDealership-Api" target="_blank" rel="noreferrer"><span class="icon" data-icon="github" aria-hidden="true"></span>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="project card reveal">
+            <div class="project__img project__img--e" role="img" aria-label="Imagem placeholder do projeto"></div>
+            <div class="project__body">
+              <h3 class="project__title">Desenvolvimento Backend</h3>
+              <p class="project__desc">
+                Desenvolvimento de um Job para priorização de eventos recebidos dos transportadores para a empresa Samsung SDS
+              </p>
+              <div class="project__tags">
+                <span class="chip chip--sm">Java</span>
+                <span class="chip chip--sm">Spring/SpringBoot</span>
+                <span class="chip chip--sm">PostgreSQL</span>
+                <span class="chip chip--sm">JPA</span>
+                <span class="chip chip--sm">Spring Scheduling</span>
+                <span class="chip chip--sm">Maven</span>
+              </div>
+              <div class="project__links">
+                <a class="btn btn--ghost btn--sm" href="https://github.com/EduardoMnds/FirstJob" target="_blank" rel="noreferrer"><span class="icon" data-icon="github" aria-hidden="true"></span>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="callout card reveal">
+          <div class="callout__left">
+            <h3 class="callout__title">Quer ver mais?</h3>
+          </div>
+          <div class="callout__right">
+            <a class="btn btn--primary" href="#contato">
+              <span class="icon" data-icon="message" aria-hidden="true"></span>
+              Vamos conversar
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title reveal">Contato</h2>
+        </div>
+
+        <div class="contact">
+          <aside class="contact__cards">
+            <div class="card reveal">
+              <h3 class="card__title">Links</h3>
+              <ul class="linklist">
+                <li><a href="https://www.linkedin.com/in/eduardo-mendes-a2b1b9219/" target="_blank" rel="noreferrer"><span class="icon" data-icon="linkedin" aria-hidden="true"></span> LinkedIn</a></li>
+                <li><a href="https://github.com/EduardoMnds" target="_blank" rel="noreferrer"><span class="icon" data-icon="github" aria-hidden="true"></span> GitHub</a></li>
+                <li><a href="mailto:seuemail@exemplo.com"><span class="icon" data-icon="mail" aria-hidden="true"></span>eduardo2002brasil@gmail.com</a></li>
+              </ul>
+            </div>
+
+            <div class="card reveal">
+              <h3 class="card__title">Localização</h3>
+              <p class="card__text">Brasil • Remoto / Híbrido</p>
+              <div class="mini-map" role="img" aria-label="Imagem placeholder de mapa"></div>
+            </div>
+
+            <div class="card reveal">
+              <h3 class="card__title">Diferenciais</h3>
+              <ul class="bullets">
+                <li>Visão de suporte + desenvolvimento</li>
+                <li>Rotinas corporativas (deploys, monitoramento, incidentes)</li>
+                <li>Documentação e comunicação com stakeholders</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="footer__brand">
+            <span class="brand__mark" aria-hidden="true">EG</span>
+            <div>
+              <div class="footer__name">Eduardo Germano</div>
+              <div class="footer__small">Backend Java • Sistemas • Cloud</div>
+            </div>
+          </div>
+          <div class="footer__small">© <span id="year"></span> • Feito com HTML/CSS/JS</div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="to-top" id="toTopBtn" type="button" aria-label="Voltar ao topo">
+      <span class="icon" data-icon="chevronUp" aria-hidden="true"></span>
+    </button>
+
+    <!-- Modal (single reusable) -->
+    <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal__overlay" data-close="true"></div>
+      <div class="modal__panel">
+        <button class="icon-btn modal__close" type="button" data-close="true" aria-label="Fechar">
+          <span class="icon" data-icon="x" aria-hidden="true"></span>
+        </button>
+        <div class="modal__content" id="modalContent"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
